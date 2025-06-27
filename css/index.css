@@ -54,6 +54,7 @@
 
 .side-menu ul li a {
     display: block;
+    text-align: center;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
@@ -62,5 +63,6 @@
 }
 
 .side-menu ul li a:hover {
+    scale: 110%;
     background-color: #555;
 }
