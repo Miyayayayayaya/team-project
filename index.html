@@ -13,6 +13,7 @@
         </div>
         <nav class="side-menu">
             <ul>
+                <li><a href="index.html">TOP</a></li>
                 <li><a href="food1.html">国1</a></li>
                 <li><a href="food2.html">国2</a></li>
             </ul>
@@ -42,37 +43,6 @@
             <li><a href="https://www.google.com/url?q=http://www.toyo.ac.jp/nyushi/about/campus/akabanedai/&sa=D&source=editors&ust=1750958404006494&usg=AOvVaw1QttMUd5JmpQIpf3-6R5fG"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDqm35ZZELNuej-D1zPvVJgSC2JNULDc4JA&s"></a></li>
             <li><a href="https://www.google.com/url?q=http://www.toyo.ac.jp/nyushi/about/campus/akabanedai/&sa=D&source=editors&ust=1750958404006494&usg=AOvVaw1QttMUd5JmpQIpf3-6R5fG"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNDqm35ZZELNuej-D1zPvVJgSC2JNULDc4JA&s"></a></li>
         </ul>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const hamburgerMenu = document.querySelector('.menu-button');
-                const sideMenu = document.querySelector('.side-menu');
-
-                if (hamburgerMenu && sideMenu) {
-                    hamburgerMenu.addEventListener('click', function() {
-                        sideMenu.classList.toggle('open');
-                        hamburgerMenu.classList.toggle('active');
-                    });
-
-                    // サイドメニュー内のリンクをクリックしたらメニューを閉じる
-                    sideMenu.querySelectorAll('a').forEach(link => {
-                        link.addEventListener('click', () => {
-                            sideMenu.classList.remove('open');
-                            hamburgerMenu.classList.remove('active');
-                        });
-                    });
-
-                    // サイドメニューの外側をクリックしたらメニューを閉じる
-                    document.addEventListener('click', function(event) {
-                        const isClickInsideMenu = sideMenu.contains(event.target);
-                        const isClickOnHamburger = hamburgerMenu.contains(event.target);
-
-                        if (!isClickInsideMenu && !isClickOnHamburger && sideMenu.classList.contains('open')) {
-                            sideMenu.classList.remove('open');
-                            hamburgerMenu.classList.remove('active');
-                        }
-                    });
-                }
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>
