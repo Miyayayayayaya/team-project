@@ -68,14 +68,22 @@ h1{
     font-size: 40px;
 }
 
-ul{
+.flag{
     padding-left: 3%;
     padding-right: 3%;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 7%;
+    margin-bottom: 0%;
 }
 
-li{
+.country{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    font-size: 120%;
+}
+
+.inline li{
     display: inline-block;
     width: 49%;
     text-align: center;
