@@ -10,6 +10,14 @@
     align-items: center;
     
 }
+#title{
+    display: flex;         /* 横並びにする */
+    align-items: flex-start; /* 上に揃える */
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(227, 231, 45);
+}
 
 .text{
     display: flex;         /* 横並びにする */
