@@ -1,11 +1,21 @@
 .explain{
+    display: flex;  
     width:500px;
-    height:200px;
+    height:240px;
     border: solid 5px #000;
     background-color: #fff;
     padding: 25px;
     box-sizing: border-box;
-    
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    display: flex;         /* 横並びにする */
+    align-items: flex-start; /* 上に揃える */
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 129, 224);
 }
 
 .text{
