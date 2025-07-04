@@ -4,7 +4,14 @@
     background-color: #e9eae1;
     padding: 25px;
     box-sizing: border-box;
-    
+}
+#title{
+    display: flex;         /* 横並びにする */
+    align-items: flex-start; /* 上に揃える */
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 106, 102);
 }
 
 .text{
