@@ -1,0 +1,22 @@
+.explain{
+    width:500px;
+    height:200px;
+    border: solid 5px #000;
+    background-color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    
+}
+
+.text{
+    display: flex;         /* 横並びにする */
+    align-items: flex-start; /* 上に揃える */
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
