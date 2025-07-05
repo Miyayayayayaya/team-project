@@ -27,4 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        const button = document.getElementById("back-to-top");
+  
+  // ページを100px以上スクロールしたら表示
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = "block";
+    }
+    else {
+    button.style.display = "none";
+    }
+    }
+
+// ボタンクリック時の動作
+    document.getElementById("back-to-top").onclick = function() {
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth" // スムーズスクロール
+        });
+    }
 });
